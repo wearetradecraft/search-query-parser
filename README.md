@@ -1,5 +1,7 @@
 # SearchQueryParser
 
+**Note: mirrored because the original repo (https://github.com/takumakanari/search-query-parser-ruby) is now a 404 and the gem has disappeared from Rubygems**.
+
 A Simple parser of query for the searching.
 
 It behaves somply like as follows:
@@ -30,16 +32,19 @@ q.fields['tags']  # => ['tag1 tag2 tag3']
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'search-query-parser'
+gem 'search-query-parser', :git => 'git@github.com:dxwcyber/search-query-parser.git'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Or install it yourself by cloning this repository, building the gem and installing it:
 
-    $ gem install search-query-parser
+    $ git clone git@github.com:dxwcyber/search-query-parser.git
+    $ cd search-query-parser
+    $ git build search-query-parser.gemspec
+    $ gem install search-query-parser-0.1.0.gem
 
 ## TODO
 
